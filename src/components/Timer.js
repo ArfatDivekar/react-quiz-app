@@ -2,6 +2,7 @@ import { useEffect } from "react";
 
 function Timer({ dispatch, remainingSeconds }) {
   const mins = Math.floor(remainingSeconds / 60);
+  // console.log(mins);
   const seconds = Math.floor(remainingSeconds % 60);
   useEffect(
     function () {
