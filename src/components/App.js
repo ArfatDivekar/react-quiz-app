@@ -90,7 +90,7 @@ export default function App() {
   );
 
   useEffect(function () {
-    fetch("/Questions.json")
+    fetch("/questions.json")
       .then((res) => res.json())
       .then((data) =>
         dispatch({ type: "dataRecieved", payload: data.questions })
